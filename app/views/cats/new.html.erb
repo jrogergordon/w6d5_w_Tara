@@ -1,0 +1,33 @@
+<h1> ass a new cat<h1>
+
+<form action = "/cats" method = "post">
+
+ <label for="name">Name</label>
+ <input id="name" type="text" name="cat[name]">
+
+<label for="birthdate">Birthdate</label>
+<input id="birthdate" type="date" name="cat[birthdate]">
+
+<label for="color">color</label>
+<select id="color" name="cat[color]">
+<option disabled selected>-- Please Select --</option>
+<option value="Black">Black</option>
+<option value="Orange">Orange</option>
+<option value="Brown">Brown</option>
+<option value="White">White</option>
+</select>
+
+  <label for="description">Description</label>
+ <textarea name="cat[description]"></textarea>
+
+   <label for="sex">sex</label>
+   <input type="radio" id="m" name="cat[sex]" value="M">
+   <label for="m">M</label><br>
+     <input type="radio" id="f" name="cat[sex]" value="F">
+   <label for="f">F</label><br>
+
+<input type="submit" value="Add a cat to the pile">
+</form>
+
+
+
